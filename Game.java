@@ -1,6 +1,6 @@
 public class Game {
   public static final int PLAYERS = 3;
-  public static final int MONEY = 1000;
+  public static int MONEY = 0;
   private String mAnswer;
   private String mHits;
   private String mMisses;
@@ -11,6 +11,11 @@ public class Game {
     mHits = "";
     mMisses = "";
 
+  }
+  public void spinWheel() {
+    Random rand = new Random();
+    int rando = rand.nextInt(10) + 1;
+    System.out.printf("This round is for %s\n", rando);
   }
   private char validateGuess(char letter) {
 
@@ -71,9 +76,7 @@ public class Game {
 
   }
   public int getMoney() {
-
     return MONEY;
-
   }
   public String getAnswer() {
 

@@ -1,3 +1,4 @@
+import java.util.Random;
 import java.io.Console;
 
 public class Prompter {
@@ -14,6 +15,7 @@ public class Prompter {
     while (!mGame.isSolved()) {
 
       displayProgress();
+      spinWheel();
       promptForGuess();
 
     }
@@ -49,6 +51,13 @@ public class Prompter {
     }
     return isHit;
   } 
+  public void spinWheel() {
+
+    Random rand = new Random();
+    int random = rand.nextInt(10);
+    System.out.printf("You span the wheel and got $%s00\n", random);
+
+  }
   public void displayProgress() {
 
     System.out.printf("You have $%d. To solve: %s\n", mGame.getMoney(), mGame.getCurrentProgress());
