@@ -12,11 +12,6 @@ public class Game {
     mMisses = "";
 
   }
-  public void spinWheel() {
-    Random rand = new Random();
-    int rando = rand.nextInt(10) + 1;
-    System.out.printf("This round is for %s\n", rando);
-  }
   private char validateGuess(char letter) {
 
     if (!Character.isLetter(letter)) {

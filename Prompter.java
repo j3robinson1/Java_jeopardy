@@ -55,7 +55,15 @@ public class Prompter {
 
     Random rand = new Random();
     int random = rand.nextInt(10);
+    if (random == 0) {
+      
+      System.out.println("You went Bankrupt");
+
+    }else {
+
     System.out.printf("You span the wheel and got $%s00\n", random);
+
+    }
 
   }
   public void displayProgress() {
