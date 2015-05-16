@@ -18,7 +18,7 @@ public class Prompter {
       spinWheel();
       promptForGuess();
 
-    }
+    } 
     if (mGame.isSolved()) {
 
       System.out.printf("Congratulations you won with $%d", mGame.getMoney());
@@ -28,7 +28,8 @@ public class Prompter {
       System.out.printf("You lost $%d", mGame.getMoney());
 
     }
-  }
+
+  } 
   public boolean promptForGuess() {
 
     Console console = System.console();
@@ -50,13 +51,13 @@ public class Prompter {
 
     }
     return isHit;
-  } 
+  }
   public void spinWheel() {
 
     Random rand = new Random();
     int random = rand.nextInt(10);
     if (random == 0) {
-      
+
       System.out.println("You went Bankrupt");
 
     }else {

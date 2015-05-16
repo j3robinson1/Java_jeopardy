@@ -35,13 +35,13 @@ public class Game {
 
     }
     return applyGuess(letters.charAt(0));
+
   }
   public boolean applyGuess(char letter) {
 
     letter = validateGuess(letter);
     boolean isHit = mAnswer.indexOf(letter) >= 0;
     if (isHit) {
-
       mHits += letter;
     
     } else {
