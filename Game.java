@@ -1,6 +1,7 @@
 public class Game {
   public static final int PLAYERS = 3;
-  public static int MONEY = 0;
+  public static int MONEY;
+  
   private String mAnswer;
   private String mHits;
   private String mMisses;

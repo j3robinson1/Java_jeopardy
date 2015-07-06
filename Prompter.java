@@ -3,6 +3,8 @@ import java.io.Console;
 
 public class Prompter {
 
+  public static int MONEY;
+
   private Game mGame;
 
   public Prompter(Game game) {
@@ -65,7 +67,7 @@ public class Prompter {
     System.out.printf("You span the wheel and got $%s00\n", random);
 
     }
-
+    MONEY = random + MONEY;
   }
   public void displayProgress() {
 
